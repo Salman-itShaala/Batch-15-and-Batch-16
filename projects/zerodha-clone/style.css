@@ -31,3 +31,38 @@ body {
 .header ul li a:hover {
   color: #387ed1;
 }
+
+/* ------header end------- */
+
+/* --------hero section start---------- */
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  height: 88vh;
+  color: #424242;
+}
+
+.hero-section h1 {
+  font-weight: 500;
+}
+
+.hero-img {
+  width: 800px;
+}
+
+.cta-btn {
+  color: white;
+  text-decoration: none;
+  background-color: #387ed1;
+  padding: 8px 20px;
+  border-radius: 3px;
+}
+
+.cta-btn:hover {
+  background-color: #222;
+}
+
+/* --------hero section end---------- */
