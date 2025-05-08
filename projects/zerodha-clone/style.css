@@ -121,3 +121,71 @@ body {
 .info-link:hover {
   color: #424242;
 }
+
+.section-right-links {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+}
+.section-right-links a,
+.pricing-section-left a {
+  color: #387ed1;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-right-links a:hover,
+.pricing-section-left a:hover {
+  color: #424242;
+}
+
+/* -------------------- */
+
+/* transition : background-color 1s  linear */
+
+.press-logos-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+.press-logos-section a:hover {
+  opacity: 0.5;
+}
+
+/* ------pricing section----- */
+
+.pricing-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 150px;
+}
+
+.pricing-section-left {
+  width: 400px;
+}
+
+.pricing-info {
+  display: flex;
+}
+
+.pricing-info p {
+  align-self: flex-end;
+  font-size: 12px;
+}
+
+.pricing-heading {
+  color: #424242;
+  font-size: 32px;
+}
+
+.pricing-desc {
+  padding: 28px 0;
+  color: #424242;
+}
+
+.pricing-info img {
+  width: 140px;
+}
