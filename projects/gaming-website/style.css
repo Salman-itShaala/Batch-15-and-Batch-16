@@ -7,3 +7,39 @@ body {
   background: #39289f;
   font-family: "Poppins", sans-serif;
 }
+
+/* header start */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+  padding: 0 150px;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.contact-us {
+  background-color: #fa9021;
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+
+/* header end */
