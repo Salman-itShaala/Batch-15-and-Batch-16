@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.left {
+  background-image: url("form-img.png");
+  width: 32%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 52vh;
+}
+
+.left h1 {
+  font-size: 44px;
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.left p {
+  color: rgba(255, 255, 255, 0.497);
+}
+
+.right {
+  width: 50%;
+}
