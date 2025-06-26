@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* calc */
+
+header {
+  height: 13vh;
+  background-color: blue;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+  transition: background-color 1s ease-out 1s;
+}
+
+.box:hover {
+  /* transform: translate(0, 100px); */
+  /* filter: blur(4px); */
+  background-color: red;
+}
+
+img {
+  filter: blur(1px);
+  transition: filter 0.4s ease-in-out;
+}
+img:hover {
+  filter: blur(0);
+  border-radius: 10px;
+}
+
+/* 0 - 1 -->  */
+
+p {
+  font-size: clamp(24px, 4vw, 44px); /* Scales text dynamically */
+}
