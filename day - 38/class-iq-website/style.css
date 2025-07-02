@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-brand-color: #c2f578;
+  --common-padding: 0 6vw;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  padding: var(--common-padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 12vh;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+.courses {
+  color: #3e3e3e;
+  text-decoration: none;
+}
+
+.courses:hover {
+  color: #000;
+}
+
+.header-right {
+  display: flex;
+  gap: 2rem;
+}
+
+.header-right a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.header-right a:hover {
+  background-color: #191919;
+}
+
+/* ------------------------- header end ------------------------- */
+
+/* ---------------------- hero section start ---------------------- */
+
+main {
+  padding: var(--common-padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 88vh;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+  width: 50%;
+  height: 100%;
+}
+
+.heading {
+  font-size: 4rem;
+  /* font-weight: 100; */
+}
+
+.sub-heading {
+  color: #96989a;
+}
