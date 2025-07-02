@@ -132,6 +132,49 @@ main {
   color: #0c151d;
 }
 
+/* ---------- projects css ---------------- */
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.options .btns-container {
+  background-color: var(--theme-btn-bg);
+  padding: 0.5rem;
+  color: var(--text-color);
+  border-radius: 0.5rem;
+}
+
+.btns-container button {
+  padding: 1rem 4rem;
+  color: var(--text-color);
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.btns-container button:first-child {
+  background-color: var(--bg-color);
+}
+
+.btns-container button:last-child {
+  background-color: var(--theme-btn-bg);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.hidden-content {
+  display: none;
+}
+
+/* ================================ Responsive CSS ================================ */
+
 @media (max-width: 768px) {
   :root {
     font-size: 14px;
