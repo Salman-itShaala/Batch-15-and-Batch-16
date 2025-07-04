@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Spartan";
+  src: url("SpartanMB-Bold.woff2");
+}
+
+@font-face {
+  font-family: "League Spartan";
+  src: url("LeagueSpartan-SemiBold.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  font-size: 4vw;
+  background-color: aqua;
+  position: relative;
+  font-family: "League Spartan";
+}

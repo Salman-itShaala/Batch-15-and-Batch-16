@@ -19,7 +19,8 @@ function playGame(userChoice) {
         || userChoice === "paper" && computerChoice === "rock"
         || userChoice === "scissors" && computerChoice === "paper"
     ) {
-        result.innerHTML = "Result : You Won 😁"
+        result.innerHTML = "Result : You Won 😁";
+        result.style.color = "green";
     } else {
         result.innerHTML = "Result : You Lost 🥲"
     }

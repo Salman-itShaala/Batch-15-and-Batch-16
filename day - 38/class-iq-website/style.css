@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
 :root {
@@ -73,7 +74,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 88vh;
+  min-height: 88vh;
 }
 
 .hero-left {
@@ -92,4 +93,79 @@ main {
 
 .sub-heading {
   color: #96989a;
+}
+
+.brand-name {
+  font-weight: 700;
+  position: relative;
+  max-width: fit-content;
+  /* text-decoration: underline; */
+}
+
+.brand-name img {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-left a {
+  color: #000;
+  background-color: var(--primary-brand-color);
+  width: fit-content;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.hero-left a:hover {
+  background-color: #acff2f;
+}
+
+.hero-right {
+  background: radial-gradient(
+    circle,
+    rgba(194, 245, 120, 1) 25%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  position: relative;
+}
+
+.arrow-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.arrow-svg-2 {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+}
+
+/* responsive css */
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 12px;
+  }
+  main {
+    flex-direction: column;
+  }
+  main .hero-left {
+    width: 100%;
+  }
+  .hero-right {
+    width: 100%;
+  }
+  .hero-right img:first-child {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .courses {
+    display: none;
+  }
 }

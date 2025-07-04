@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+.box > p {
+  background-color: blueviolet;
+}
+
+.box ~ p {
+}
+
+.box + p {
+}
+
+.parent {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.parent img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.parent h1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: red;
+}
+
+input:focus {
+  border: none;
+  outline: 2px solid red;
+}
+
+table,
+tr,
+th,
+td {
+  margin: 10px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+/*n == 0,1,2,3,4,5,6,  */
+
+tr:first-child {
+  background-color: aqua;
+}
+
+body::-webkit-scrollbar {
+  background-color: red;
+  width: 4px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: aqua;
+  border-radius: 4px;
+}
+
+input::placeholder {
+  color: red;
+}
+
+p::selection {
+  background-color: yellow;
+}
+
+p::before {
+  content: "🥲";
+}
+
+p::after {
+  content: "😁";
+}
+
+.para {
+  position: relative;
+}
+
+.para::after {
+  content: "";
+  background-color: red;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  bottom: -4px;
+}

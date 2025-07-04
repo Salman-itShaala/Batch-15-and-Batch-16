@@ -53,4 +53,7 @@ checkPalindrome(9999);
 // a number that equals the sum of its digits each raised to
 //  the power of the number of digits it contains.
 // For example,
-// 153 is an Armstrong number because 1 ^ 3 + 5 ^ 3 + 3 ^ 3 = 153 
+// 153 is an Armstrong number because 1 ^ 3 + 5 ^ 3 + 3 ^ 3 = 153
+
+
+//  123

@@ -4,7 +4,6 @@ const colorInput = document.getElementById("color-input");
 let color = "red";
 let isMouseClicked = false;
 
-
 document.addEventListener("mousedown", toggleMouseClickedToTrue);
 
 

@@ -43,3 +43,12 @@ body {
 }
 
 /* header end */
+
+.section-1 {
+  height: 100vh;
+  background-image: url("./images/db4d123c4b390965f684f22d4bf13849\ 1.png");
+  /* filter: brightness(10%); */
+  box-shadow: "0px 4px 4px 0px #00000040,inset 0 0 0 1000px rgba(0,0,0,.5)";
+  font-size: 30px;
+  color: white;
+}
