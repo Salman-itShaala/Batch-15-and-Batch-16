@@ -29,24 +29,18 @@ function getUsers() {
 }
 
 
-function getTodos() {
-    const res = fetch("https://dummyjson.com/todos");
+async function getTodos() {
+    const res = await fetch("https://dummyjson.com/todos");
 
-    res
-        .then(data => data.json())
-        .then(data2 => {
-            // add this data to fe
-            const todos = data2.todos;
+    const data = await res.json();
 
-            todos.forEach(todo => {
-                const para = document.createElement("p");
+    const todos = data.todos;
 
-                para.innerHTML = todo.todo;
+    todos.forEach(todo => {
+        const para = document.createElement("p");
 
-                document.body.appendChild(para);
-            });
-        })
-        .catch(error => console.log(error))
+        para.innerHTML = todo.todo;
 
-
+        document.body.appendChild(para);
+    })
 }

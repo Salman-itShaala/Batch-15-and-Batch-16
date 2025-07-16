@@ -13,7 +13,7 @@ async function getWeatherData() {
 
     try {
 
-        const res = await fetch(`http://api.weatherstack.com/current?access_key=${apiKey}&query=${cityInput.value}`)
+        const res = await fetch(`https://api.weatherstack.com/current?access_key=${apiKey}&query=${cityInput.value}`)
 
         const data = await res.json();
 
@@ -35,3 +35,22 @@ async function getWeatherData() {
     }
 
 }
+
+
+
+async function getData() {
+    const res = await fetch("https://api.weatherstack.com/current?access_key=44fbe6984578f7d0e631f3c8e5c4c185&query=pune")
+
+    const data = await res.json();
+
+    console.log(data);
+
+    console.log("B")
+}
+
+
+console.log("A");
+
+getData();
+
+console.log("C");
