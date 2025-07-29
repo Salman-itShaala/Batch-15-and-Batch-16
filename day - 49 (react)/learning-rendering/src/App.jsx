@@ -1,17 +1,25 @@
 import "./App.css";
-import Sports from "./components/Sports";
 
 function App() {
+  const handleClick = () => {
+    console.log("Button is clicked");
+  };
+
+  let num = 44;
+
   return (
     <div>
-      <h1>Hii there</h1>
-      <Sports />
+      <button onClick={handleClick}>Click me</button>
+
+      <button
+        onClick={()=>{
+          console.log("Button is clicked");
+        }}
+      >
+        Button 2
+      </button>
     </div>
   );
 }
 
 export default App;
-
-
-
-

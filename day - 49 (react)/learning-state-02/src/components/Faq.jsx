@@ -8,7 +8,7 @@ function Faq({ question, answer }) {
       <div className="question">
         <p>{question}</p>
         <button onClick={() => setShowAnswer(!showAnswer)}>
-          Toggle answer
+          {showAnswer ? "X" : "+"}
         </button>
       </div>
       {showAnswer && <div>{answer}</div>}
