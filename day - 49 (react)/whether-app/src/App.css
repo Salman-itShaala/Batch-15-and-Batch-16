@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: white;
+  font-family: monospace;
+}
+
+h1 {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.city-input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.city-input-wrapper input,
+.city-input-wrapper button {
+  padding: 1rem 1.5rem;
+  border-radius: 0.4rem;
+  border: none;
+}
+
+.city-input-wrapper button {
+  background-color: rgb(30, 160, 30);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.city-input-wrapper button:hover {
+  background-color: green;
+}
+
+.results-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 4rem;
+  flex-direction: column;
+}
