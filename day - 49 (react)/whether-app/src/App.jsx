@@ -1,19 +1,45 @@
 import { useState } from "react";
 import "./App.css";
+import { useEffect } from "react";
 
 function App() {
   const [cityInput, setCityInput] = useState("");
+  const [whetherData, setWhetherData] = useState(null);
+  const [loading, setLoading] = useState(false);
 
-  console.log(import.meta.env.VITE_APP_MY_SECRET_KEY);
-  console.log(import.meta.env.VITE_APP_USERNAME);
+  navigator.geolocation.getCurrentPosition(success, error);
 
-  async function getWhetherData() {
+  function success(obj) {
+    console.log("from success fn ", obj.coords.latitude, obj.coords.longitude);
+  }
+
+  function error(e) {
+    console.log(e);
+  }
+
+  useEffect(() => {
+    // send req with city pune and update data to front end
+    // pune --> current location  --> latitude and longitude --> city
+    getWhetherData("pune");
+  }, []);
+
+  async function getWhetherData(city) {
     // environment variables
-    //
+    setLoading(true);
+    const SECRET = import.meta.env.VITE_APP_MY_SECRET_KEY;
 
     const res = await fetch(
-      `https://api.weatherstack.com/current?access_key=YOUR_ACCESS_KEY&query=${cityInput}`
+      `https://api.weatherapi.com/v1/current.json?key=${SECRET}&q=${city}`
     );
+
+    const data = await res.json();
+
+    console.log(data);
+
+    setWhetherData(data);
+
+    setCityInput("");
+    setLoading(false);
   }
 
   return (
@@ -26,11 +52,20 @@ function App() {
           value={cityInput}
           onChange={(e) => setCityInput(e.target.value)}
         />
-        <button onClick={getWhetherData}>Search</button>
+        <button onClick={() => getWhetherData(cityInput)}>Search</button>
       </div>
 
       <div className="results-wrapper">
         <h2>Results</h2>
+
+        <h3>
+          city :
+          {loading ? (
+            <span className="loader"></span>
+          ) : (
+            <span>{whetherData?.location?.name}</span>
+          )}
+        </h3>
       </div>
     </>
   );
