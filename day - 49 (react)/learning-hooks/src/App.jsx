@@ -3,13 +3,15 @@ import "./App.css";
 import { useState } from "react";
 import LearnReducer from "./LearnReducer";
 import LearMemo from "./LearMemo";
+import LearnCustomHook from "./LearnCustomHook";
+import useSendReq from "./hooks/sendReq";
 
 function App() {
   return (
     <>
       <h1>Hii there</h1>
-      <LearMemo />
-      {/* <LearnReducer /> */}
+      {/* <button onClick={sendReq}>Click me</button> */}
+      <LearnCustomHook />
     </>
   );
 }
